@@ -1,0 +1,13 @@
+:root { --azul: #1F4FE0; --ambar: #FFC53D; --tinta: #16181D; --fondo: #FFFFFF; --suave: #5B6170; }
+@media (prefers-color-scheme: dark) { :root { --fondo: #16181D; --tinta: #F2F3F5; --suave: #A9AEB9; --azul: #7A9BFF; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--tinta); font: 17px/1.6 "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+a { color: var(--azul); }
+.i { position: relative; }
+.i::after { content: ""; position: absolute; left: 50%; top: 0.12em; width: 0.32em; height: 0.32em; margin-left: -0.16em; border-radius: 50%; background: var(--ambar); }
+.promesa { font-size: 1.2rem; color: var(--suave); margin-top: 0; }
+.fecha { color: var(--suave); margin-top: 0; }
+nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 32px; }
